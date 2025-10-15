@@ -1,0 +1,34 @@
+site_name: Federated AI Sentinel
+site_description: Privacy-preserving AI for early detection of hospital-acquired infections
+site_author: Federated AI Sentinel Contributors
+repo_url: https://github.com/saminathan017/Federated-AI-Sentinel-Early-Detection-of-Hospital-Acquired-Infections
+repo_name: GitHub
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Clinical Protocol: clinical_protocol.md
+  - Threat Model: threat_model.md
+

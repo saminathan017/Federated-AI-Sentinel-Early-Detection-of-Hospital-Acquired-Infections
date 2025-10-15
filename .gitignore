@@ -1,0 +1,140 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Environment variables
+.env
+.env.local
+*.env
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Feast
+feast_repo/.feastignore
+feast_repo/data/
+
+# Data files
+*.csv
+*.parquet
+*.db
+*.sqlite
+data/
+datasets/
+
+# Model artifacts
+models/
+checkpoints/
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+*.local
+
+# Monitoring
+prometheus_data/
+grafana_data/
+
+# Kafka / Redpanda
+kafka_data/
+redpanda_data/
+
+# MinIO
+minio_data/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Documentation build
+site/
+docs/_build/
+
+# Secrets
+secrets/
+*.pem
+*.key
+*.crt
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+

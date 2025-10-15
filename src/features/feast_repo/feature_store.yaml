@@ -1,0 +1,18 @@
+# Feast feature store configuration
+# Defines online and offline stores for feature serving
+
+project: sentinel_features
+provider: local
+registry:
+  path: registry.db
+  cache_ttl_seconds: 60
+
+online_store:
+  type: sqlite
+  path: online_store.db
+
+offline_store:
+  type: file
+
+entity_key_serialization_version: 2
+

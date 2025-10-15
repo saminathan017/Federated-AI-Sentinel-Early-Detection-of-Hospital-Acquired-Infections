@@ -1,0 +1,45 @@
+name: UI CI
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'src/ui/**'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'src/ui/**'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: src/ui/clinician_app
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: src/ui/clinician_app/package-lock.json
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Lint TypeScript
+      run: npm run lint
+
+    - name: Build application
+      run: npm run build
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: ui-build
+        path: src/ui/clinician_app/dist
+
